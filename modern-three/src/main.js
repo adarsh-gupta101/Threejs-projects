@@ -1,7 +1,7 @@
 import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import * as dat from 'dat.gui'
+// import * as dat from 'dat.gui'
 import fragment from './shaders/fragment.glsl?raw'
 import vertex from './shaders/vertex.glsl?raw'
 import t1 from '../elon.jpg'
@@ -9,7 +9,7 @@ import t2 from '../star.jpg'
 import { Raycaster } from 'three'
 
 // Debug
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -145,10 +145,10 @@ camera.position.y = 0
 camera.position.z = 1000
 scene.add(camera)
 
-// gui add camera position
-gui.add(camera.position, 'x').min(-300).max(300).step(10)
-gui.add(camera.position, 'y').min(-300).max(300).step(10)
-gui.add(camera.position, 'z').min(-3000).max(3000).step(100)
+// // gui add camera position
+// gui.add(camera.position, 'x').min(-300).max(300).step(10)
+// gui.add(camera.position, 'y').min(-300).max(300).step(10)
+// gui.add(camera.position, 'z').min(-3000).max(3000).step(100)
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
