@@ -9,7 +9,6 @@
     "three",
     "vite"
   ],
- 
   "scripts": {
     "dev": "vite",
     "build": " vite build",
@@ -20,5 +19,8 @@
     "three": "^0.137.5",
     "vite": "^2.8.4",
     "vite-plugin-glsl": "^0.1.1"
+  },
+  "dependencies": {
+    "gsap": "^3.11.3"
   }
 }
